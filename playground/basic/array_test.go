@@ -31,3 +31,18 @@ func modifyString(a string) {
 func modifyStringPointer(b *string) {
 	*b = "1"
 }
+
+func TestSwapBytes(t *testing.T) {
+	bs := []byte{1, 2}
+	t.Log(bs[0], bs[1])
+	swap(bs)
+	t.Log(bs[0], bs[1])
+}
+
+func swap(bs []byte) {
+	val0 := bs[0]
+	val1 := bs[1]
+
+	bs[0] = val1
+	bs[1] = val0
+}
