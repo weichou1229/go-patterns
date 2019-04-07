@@ -25,6 +25,7 @@ func TestGjson(t *testing.T) {
 	println(gjson.Get(json, "name.last").String())
 	println(gjson.Get(json, "name").String())
 	println(gjson.Get(json, "age").Int())
+	println(gjson.Get(json, "age").Float())
 	println(gjson.Get(json, "age").String())
 }
 
