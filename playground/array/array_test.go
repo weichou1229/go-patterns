@@ -9,7 +9,7 @@ import (
 // Basically, array operation is more safe and efficient then slice.
 // Because array has fixed length and capability, and it will copy when pass to function
 
-// There are different way to initial a array
+// There are different way to initial an array
 func TestArray_init_1(t *testing.T) {
 	// Declaring arrays and accessing
 	var gophers [5]string
