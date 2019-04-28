@@ -12,7 +12,7 @@ import (
 func TestSub(t *testing.T) {
 	opts := mqtt.NewClientOptions()
 	opts.AddBroker(fmt.Sprintf("%s://%s:%s", "tcp", "localhost", "1883"))
-	opts.SetClientID("test-clientID")
+	//opts.SetClientID("test-clientID")
 	opts.SetKeepAlive(time.Second * time.Duration(60))
 	// If lost connection, reconnect again
 	opts.SetConnectionLostHandler(func(client mqtt.Client, e error) {
